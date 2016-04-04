@@ -1,4 +1,5 @@
 import Log
+
 public class StandardOutputAppender: Appender {
     public var name: String = "Standard Output Appender"
     public var closed: Bool = false
