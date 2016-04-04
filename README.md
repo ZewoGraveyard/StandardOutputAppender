@@ -1,5 +1,5 @@
-# Standard Out Appender
+# Standard Output Appender
 
-Log appender for standard out
+Log appender for standard output
 
 
