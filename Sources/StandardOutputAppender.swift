@@ -1,12 +1,12 @@
 import Log
-public class StandardOutputAppender : Appender {
-    public var name : String = "Standard Output Appender"
-    public var closed : Bool = false
-    public var level : Log.Level = .all
+public class StandardOutputAppender: Appender {
+    public var name: String = "Standard Output Appender"
+    public var closed: Bool = false
+    public var level: Log.Level = .all
 
     public init () {}
 
-    public func append (event : LoggingEvent) {
+    public func append (event: LoggingEvent) {
       var logMessage = "\(event.message) \n"
       if let file = event.locationInfo.file {
         logMessage += "In File: \(file)"
