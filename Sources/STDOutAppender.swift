@@ -4,6 +4,8 @@ public class STDOutAppender : Appender {
     public var closed : Bool = false
     public var level : Log.Level = .all
 
+    public init () {}
+
     public func append (event : LoggingEvent) {
       var logMessage = "\(event.message) \n"
       if let file = event.locationInfo.file {
