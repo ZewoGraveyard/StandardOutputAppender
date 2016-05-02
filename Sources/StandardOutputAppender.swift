@@ -8,7 +8,7 @@ public final class StandardOutputAppender: Appender {
     public init () {}
 
     public func append(_ event: LoggingEvent) {
-        var logMessage = "\(event.message) \n"
+        var logMessage = "\(event.message ?? "") \n"
         let file = event.locationInfo.file
         logMessage += "In File: \(file)"
         logMessage += "\n"
